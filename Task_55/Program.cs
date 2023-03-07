@@ -41,7 +41,7 @@ void FillRandomArray(int[,] array)
     }
 }
 
-//проверка чтобы совподали строки и столбцы
+//проверка чтобы совпaдали строки и столбцы
 bool ValidColumnAndRows(int[,] arr) => arr.GetLength(0) == arr.GetLength(1);
 
 ///Меняем местами строки на столбцы
