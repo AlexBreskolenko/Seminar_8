@@ -24,6 +24,19 @@ void PrintArray(int[,] arr)
         Console.WriteLine();
     }
 }
+
+//Заполняем массив рандомными числами
+void FillRandomArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            array[i, j] = new Random().Next(1, 10);
+        }
+    }
+}
+
 //Меняем местами первую и последнюю строку
 void SwapLine(int[,] array)
 {
@@ -44,17 +57,6 @@ void SwapLine(int[,] array)
 
 }
 
-//Заполняем массив рандомными числами
-void FillRandomArray(int[,] array)
-{
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-        for (int j = 0; j < array.GetLength(1); j++)
-        {
-            array[i, j] = new Random().Next(1, 10);
-        }
-    }
-}
 
 //Ввод размера
 int colSize = EnterMesseng("Введите количество строк :");
